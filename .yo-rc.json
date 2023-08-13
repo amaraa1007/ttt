@@ -37,6 +37,8 @@
     "nativeLanguage": "en",
     "jwtSecretKey": "NmEyNzQ2MjBhMjE2NzE3MTQ3M2JmNjA1MzJiMmVlZWFmZTMyZjQ0ZjkwN2JkMWVlNjM4ZGYyOWJlMzNkYzhlM2EzNGQxMjNhZTU1Y2ViMjllZjQwNmQ3YWJmOGE3OWNkY2ZiNWMwZjBkZWM5ZjNiZTI5YTU0MmEzNzZlNWYwNTA=",
     "enableGradleEnterprise": false,
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "entities": ["News", "Device", "ProductionFigures"],
+    "lastLiquibaseTimestamp": 1691929643000
   }
 }

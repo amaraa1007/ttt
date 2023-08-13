@@ -1,0 +1,52 @@
+{
+  "name": "Device",
+  "fields": [
+    {
+      "fieldName": "deviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "DeviceType",
+      "fieldValues": "FACTORY_1,FACTORY_2,FACTORY_3"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastModifiedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastModifiedDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "device",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "ttt",
+  "clientRootFolder": "ttt",
+  "databaseType": "sql",
+  "changelogDate": "20230813122722"
+}

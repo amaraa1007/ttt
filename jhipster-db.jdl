@@ -1,0 +1,53 @@
+
+entity News {
+	title String
+	content String
+    // Default columns
+    createdBy String
+    createdDate Instant
+    lastModifiedBy String
+    lastModifiedDate Instant
+}
+
+entity Device {
+	deviceName String
+	deviceCode String
+	deviceType DeviceType
+	status String
+    // Default columns
+    createdBy String
+    createdDate Instant
+    lastModifiedBy String
+    lastModifiedDate Instant
+}
+
+
+entity ProductionFigures {
+	dayInfo String
+	weekInfo String
+	monthInfo String
+	totalInfo String
+    // Default columns
+    createdBy String
+    createdDate Instant
+    lastModifiedBy String
+    lastModifiedDate Instant
+}
+
+
+enum DeviceType {
+    FACTORY_1, FACTORY_2, FACTORY_3
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
